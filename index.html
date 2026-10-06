@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEWA KUNJ | Taste The Future</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#08090d;
+  color:#fff;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  width:300px;height:300px;
+  background:#ff2bd6;
+  filter:blur(120px);
+  opacity:.18;
+  top:-100px;left:-100px;
+  z-index:-1;
+}
+body:after{
+  content:"";
+  position:fixed;
+  width:300px;height:300px;
+  background:#00e5ff;
+  filter:blur(120px);
+  opacity:.13;
+  bottom:-100px;right:-100px;
+  z-index:-1;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  padding:16px 20px;
+  background:rgba(8,9,13,.82);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+.logo span{color:#00e5ff}
+.menu{
+  display:flex;
+  gap:15px;
+}
+.menu a{
+  color:#aaa;
+  text-decoration:none;
+  font-size:13px;
+}
+
+.hero{
+  min-height:88vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+  position:relative;
+}
+.badge{
+  display:inline-block;
+  padding:8px 14px;
+  border:1px solid rgba(0,229,255,.4);
+  border-radius:30px;
+  color:#00e5ff;
+  font-size:12px;
+  margin-bottom:22px;
+  background:rgba(0,229,255,.06);
+}
+.hero h1{
+  font-size:clamp(48px,15vw,90px);
+  line-height:.9;
+  letter-spacing:-4px;
+}
+.hero h1 span{
+  color:#ff2bd6;
+  text-shadow:0 0 30px rgba(255,43,214,.45);
+}
+.hero p{
+  max-width:520px;
+  margin:25px auto;
+  color:#aaa;
+  line-height:1.7;
+}
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:14px 22px;
+  border-radius:14px;
+  font-weight:bold;
+  color:#08090d;
+  background:#00e5ff;
+  box-shadow:0 0 25px rgba(0,229,255,.2);
+}
+.btn.alt{
+  color:#fff;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.15);
+}
+
+section{padding:70px 20px}
+.title{
+  text-align:center;
+  margin-bottom:35px;
+}
+.title small{
+  color:#00e5ff;
+  letter-spacing:2px;
+}
+.title h2{
+  font-size:34px;
+  margin-top:8px;
+}
+
+.grid{
+  max-width:1050px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+.card{
+  background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:22px;
+  padding:25px 18px;
+  text-align:center;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#00e5ff;
+}
+.icon{font-size:45px;margin-bottom:14px}
+.card h3{margin-bottom:8px}
+.card p{font-size:13px;color:#999;line-height:1.5}
+
+.special{
+  max-width:900px;
+  margin:auto;
+  padding:30px;
+  border-radius:28px;
+  background:linear-gradient(120deg,rgba(255,43,214,.12),rgba(0,229,255,.08));
+  border:1px solid rgba(255,255,255,.1);
+  text-align:center;
+}
+.special h2{font-size:30px}
+.special p{color:#aaa;margin:12px 0 20px}
+
+.menu-card{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  gap:12px;
+}
+.item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px;
+  border-radius:16px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+}
+.item span:first-child{font-weight:bold}
+.price{color:#00e5ff;font-weight:bold}
+
+.order{
+  text-align:center;
+  padding:80px 20px;
+}
+.order h2{font-size:38px;margin-bottom:12px}
+.order p{color:#999;margin-bottom:25px}
+
+.whatsapp{
+  display:inline-block;
+  padding:17px 28px;
+  border-radius:16px;
+  background:#25D366;
+  color:#071108;
+  text-decoration:none;
+  font-weight:900;
+  box-shadow:0 0 30px rgba(37,211,102,.2);
+}
+
+footer{
+  padding:35px 20px;
+  text-align:center;
+  color:#777;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+footer strong{color:#fff}
+
+@media(max-width:600px){
+  .menu a{display:none}
+  .hero{min-height:82vh}
+  .hero h1{letter-spacing:-3px}
+  section{padding:55px 16px}
+  .grid{grid-template-columns:1fr 1fr}
+  .card{padding:20px 10px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">SEWA <span>KUNJ</span></div>
+    <div class="menu">
+      <a href="#menu">Menu</a>
+      <a href="#special">Offers</a>
+      <a href="#order">Order</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="badge">✨ FUTURE OF FOOD IS HERE</div>
+
+    <h1>SEWA<br><span>KUNJ</span></h1>
+
+    <p>
+      Cakes, Mithai & Fast Food — all your favourite flavours
+      in one place. Freshly made. Beautifully served.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="#
