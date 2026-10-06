@@ -2,225 +2,105 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEWA KUNJ | Taste The Future</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#080812">
+<title>SEWA KUNJ | Mithai • Cakes • Fast Food</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#08090d;
-  color:#fff;
-  overflow-x:hidden;
+font-family:Arial,sans-serif;background:#070812;color:#fff;
+line-height:1.5;overflow-x:hidden
 }
 body:before{
-  content:"";
-  position:fixed;
-  width:300px;height:300px;
-  background:#ff2bd6;
-  filter:blur(120px);
-  opacity:.18;
-  top:-100px;left:-100px;
-  z-index:-1;
+content:"";position:fixed;width:350px;height:350px;
+background:#ff2bd6;filter:blur(130px);opacity:.12;
+top:-130px;left:-120px;z-index:-1
 }
 body:after{
-  content:"";
-  position:fixed;
-  width:300px;height:300px;
-  background:#00e5ff;
-  filter:blur(120px);
-  opacity:.13;
-  bottom:-100px;right:-100px;
-  z-index:-1;
+content:"";position:fixed;width:350px;height:350px;
+background:#00eaff;filter:blur(130px);opacity:.10;
+bottom:-130px;right:-120px;z-index:-1
 }
-
 header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  padding:16px 20px;
-  background:rgba(8,9,13,.82);
-  backdrop-filter:blur(15px);
-  border-bottom:1px solid rgba(255,255,255,.08);
+position:sticky;top:0;z-index:99;
+background:rgba(7,8,18,.85);backdrop-filter:blur(18px);
+border-bottom:1px solid #ffffff12;padding:15px
 }
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.logo{
-  font-size:22px;
-  font-weight:900;
-  letter-spacing:2px;
-}
-.logo span{color:#00e5ff}
-.menu{
-  display:flex;
-  gap:15px;
-}
-.menu a{
-  color:#aaa;
-  text-decoration:none;
-  font-size:13px;
-}
-
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:23px;font-weight:900;letter-spacing:2px}
+.logo b{color:#00eaff}
+nav a{color:#aaa;text-decoration:none;margin-left:18px;font-size:13px}
 .hero{
-  min-height:88vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:40px 20px;
-  position:relative;
+min-height:86vh;display:flex;align-items:center;
+justify-content:center;text-align:center;padding:50px 20px
 }
 .badge{
-  display:inline-block;
-  padding:8px 14px;
-  border:1px solid rgba(0,229,255,.4);
-  border-radius:30px;
-  color:#00e5ff;
-  font-size:12px;
-  margin-bottom:22px;
-  background:rgba(0,229,255,.06);
+display:inline-block;padding:8px 15px;border:1px solid #00eaff55;
+border-radius:50px;color:#00eaff;font-size:12px;
+background:#00eaff0d;margin-bottom:22px
 }
-.hero h1{
-  font-size:clamp(48px,15vw,90px);
-  line-height:.9;
-  letter-spacing:-4px;
-}
-.hero h1 span{
-  color:#ff2bd6;
-  text-shadow:0 0 30px rgba(255,43,214,.45);
-}
-.hero p{
-  max-width:520px;
-  margin:25px auto;
-  color:#aaa;
-  line-height:1.7;
-}
-.buttons{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
+.hero h1{font-size:clamp(55px,16vw,105px);line-height:.86;letter-spacing:-5px}
+.hero h1 span{color:#ff2bd6;text-shadow:0 0 30px #ff2bd655}
+.hero p{max-width:600px;color:#aaa;margin:25px auto;font-size:16px}
 .btn{
-  display:inline-block;
-  text-decoration:none;
-  padding:14px 22px;
-  border-radius:14px;
-  font-weight:bold;
-  color:#08090d;
-  background:#00e5ff;
-  box-shadow:0 0 25px rgba(0,229,255,.2);
+display:inline-block;text-decoration:none;color:#050509;
+background:#00eaff;padding:14px 22px;border-radius:14px;
+font-weight:800;margin:5px;box-shadow:0 0 25px #00eaff22
 }
-.btn.alt{
-  color:#fff;
-  background:rgba(255,255,255,.07);
-  border:1px solid rgba(255,255,255,.15);
-}
-
-section{padding:70px 20px}
-.title{
-  text-align:center;
-  margin-bottom:35px;
-}
-.title small{
-  color:#00e5ff;
-  letter-spacing:2px;
-}
-.title h2{
-  font-size:34px;
-  margin-top:8px;
-}
-
+.btn.pink{background:#ff2bd6;color:white}
+section{padding:65px 18px}
+.title{text-align:center;margin-bottom:30px}
+.title small{color:#00eaff;letter-spacing:2px;font-size:11px}
+.title h2{font-size:35px;margin-top:5px}
 .grid{
-  max-width:1050px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:15px;
+max-width:1100px;margin:auto;
+display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:15px
 }
 .card{
-  background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:22px;
-  padding:25px 18px;
-  text-align:center;
-  transition:.3s;
+padding:25px 15px;text-align:center;border-radius:22px;
+background:linear-gradient(145deg,#ffffff12,#ffffff03);
+border:1px solid #ffffff12;transition:.3s
 }
-.card:hover{
-  transform:translateY(-6px);
-  border-color:#00e5ff;
-}
-.icon{font-size:45px;margin-bottom:14px}
-.card h3{margin-bottom:8px}
-.card p{font-size:13px;color:#999;line-height:1.5}
-
-.special{
-  max-width:900px;
-  margin:auto;
-  padding:30px;
-  border-radius:28px;
-  background:linear-gradient(120deg,rgba(255,43,214,.12),rgba(0,229,255,.08));
-  border:1px solid rgba(255,255,255,.1);
-  text-align:center;
-}
-.special h2{font-size:30px}
-.special p{color:#aaa;margin:12px 0 20px}
-
-.menu-card{
-  max-width:900px;
-  margin:auto;
-  display:grid;
-  gap:12px;
+.card:hover{transform:translateY(-5px);border-color:#00eaff88}
+.icon{font-size:45px;margin-bottom:10px}
+.card h3{font-size:18px}
+.card p{font-size:12px;color:#888;margin-top:5px}
+.menu{
+max-width:900px;margin:auto;display:grid;gap:10px
 }
 .item{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px;
-  border-radius:16px;
-  background:rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.08);
+display:flex;justify-content:space-between;align-items:center;
+padding:16px;border-radius:16px;background:#ffffff08;
+border:1px solid #ffffff0d
 }
-.item span:first-child{font-weight:bold}
-.price{color:#00e5ff;font-weight:bold}
-
+.item-left{display:flex;align-items:center;gap:12px}
+.item-icon{font-size:27px}
+.item small{display:block;color:#777;font-size:11px}
+.price{color:#00eaff;font-weight:bold}
 .order{
-  text-align:center;
-  padding:80px 20px;
+text-align:center;max-width:850px;margin:auto;
+padding:45px 20px;border-radius:28px;
+background:linear-gradient(120deg,#ff2bd614,#00eaff0d);
+border:1px solid #ffffff12
 }
-.order h2{font-size:38px;margin-bottom:12px}
-.order p{color:#999;margin-bottom:25px}
-
 .whatsapp{
-  display:inline-block;
-  padding:17px 28px;
-  border-radius:16px;
-  background:#25D366;
-  color:#071108;
-  text-decoration:none;
-  font-weight:900;
-  box-shadow:0 0 30px rgba(37,211,102,.2);
+display:inline-block;background:#25d366;color:#041006;
+padding:16px 25px;border-radius:15px;
+text-decoration:none;font-weight:900;margin-top:18px
 }
-
 footer{
-  padding:35px 20px;
-  text-align:center;
-  color:#777;
-  border-top:1px solid rgba(255,255,255,.08);
+text-align:center;padding:35px 20px;color:#777;
+border-top:1px solid #ffffff0d;font-size:13px
 }
 footer strong{color:#fff}
-
 @media(max-width:600px){
-  .menu a{display:none}
-  .hero{min-height:82vh}
-  .hero h1{letter-spacing:-3px}
-  section{padding:55px 16px}
-  .grid{grid-template-columns:1fr 1fr}
-  .card{padding:20px 10px}
+nav a{display:none}
+.hero h1{letter-spacing:-4px}
+.grid{grid-template-columns:1fr 1fr}
+.card{padding:20px 8px}
+section{padding:55px 14px}
 }
 </style>
 </head>
@@ -228,26 +108,143 @@ footer strong{color:#fff}
 <body>
 
 <header>
-  <div class="nav">
-    <div class="logo">SEWA <span>KUNJ</span></div>
-    <div class="menu">
-      <a href="#menu">Menu</a>
-      <a href="#special">Offers</a>
-      <a href="#order">Order</a>
-    </div>
-  </div>
+<div class="nav">
+<div class="logo">SEWA <b>KUNJ</b></div>
+<nav>
+<a href="#menu">Menu</a>
+<a href="#offers">Offers</a>
+<a href="#order">Order</a>
+</nav>
+</div>
 </header>
 
 <section class="hero">
-  <div>
-    <div class="badge">✨ FUTURE OF FOOD IS HERE</div>
+<div>
+<div class="badge">✨ TASTE THE FUTURE</div>
+<h1>SEWA<br><span>KUNJ</span></h1>
+<p>
+Fresh Mithai • Delicious Cakes • Hot Fast Food • Refreshing Drinks
+</p>
+<a class="btn" href="#menu">Explore Menu</a>
+<a class="btn pink" href="#order">Order Now</a>
+</div>
+</section>
 
-    <h1>SEWA<br><span>KUNJ</span></h1>
+<section>
+<div class="title">
+<small>WHAT WE SERVE</small>
+<h2>Our Specialities</h2>
+</div>
 
-    <p>
-      Cakes, Mithai & Fast Food — all your favourite flavours
-      in one place. Freshly made. Beautifully served.
-    </p>
+<div class="grid">
+<div class="card"><div class="icon">🍰</div><h3>Cakes</h3><p>Fresh celebration cakes</p></div>
+<div class="card"><div class="icon">🍬</div><h3>Mithai</h3><p>Traditional sweet taste</p></div>
+<div class="card"><div class="icon">🍔</div><h3>Fast Food</h3><p>Hot & freshly prepared</p></div>
+<div class="card"><div class="icon">🥤</div><h3>Drinks</h3><p>Cool & refreshing</p></div>
+</div>
+</section>
 
-    <div class="buttons">
-      <a class="btn" href="#
+<section id="menu">
+<div class="title">
+<small>SEWA KUNJ MENU</small>
+<h2>🍬 Mithai</h2>
+</div>
+
+<div class="menu">
+<div class="item"><div class="item-left"><span class="item-icon">🍡</span><div><b>Rasgulla</b><small>Soft & juicy</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🟡</span><div><b>Peda</b><small>Rich milk sweet</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🍮</span><div><b>Barfi</b><small>Fresh & delicious</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🥜</span><div><b>Kaju Katli</b><small>Premium kaju sweet</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🟠</span><div><b>Gulab Jamun</b><small>Hot & sweet</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🟡</span><div><b>Jalebi</b><small>Crispy & juicy</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🍡</span><div><b>Motichoor Laddu</b><small>Classic Indian sweet</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🥛</span><div><b>Milk Cake</b><small>Soft & creamy</small></div></div><span class="price">Ask Price</span></div>
+</div>
+</section>
+
+<section>
+<div class="title">
+<small>HOT & FRESH</small>
+<h2>🍔 Fast Food</h2>
+</div>
+
+<div class="menu">
+<div class="item"><div class="item-left"><span class="item-icon">🥟</span><div><b>Samosa</b><small>Crispy & spicy</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🍜</span><div><b>Chowmein</b><small>Freshly cooked</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🍜</span><div><b>Paneer Chowmein</b><small>Loaded with paneer</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🥗</span><div><b>Chaat</b><small>Spicy & tangy</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🥔</span><div><b>Aloo Tikki</b><small>Crispy street style</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🌯</span><div><b>Paneer Roll</b><small>Hot & tasty</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🍟</span><div><b>French Fries</b><small>Crispy fries</small></div></div><span class="price">Ask Price</span></div>
+<div class="item"><div class="item-left"><span class="item-icon">🥟</span><div><b>Momos</b><small>Soft & delicious</small></div></div><span class="price">Ask Price</span></div>
+</div>
+</section>
+
+<section>
+<div class="title">
+<small>CAKES & DESSERTS</small>
+<h2>🎂 Cakes</h2>
+</div>
+
+<div class="grid">
+<div class="card"><div class="icon">🍫</div><h3>Chocolate</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">🌲</div><h3>Black Forest</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">🍍</div><h3>Pineapple</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">🍦</div><h3>Butterscotch</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">❤️</div><h3>Red Velvet</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">🎂</div><h3>Photo Cake</h3><p>Ask Price</p></div>
+</div>
+</section>
+
+<section>
+<div class="title">
+<small>REFRESH YOUR MOOD</small>
+<h2>🥤 Beverages</h2>
+</div>
+
+<div class="grid">
+<div class="card"><div class="icon">🥭</div><h3>Mango Shake</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">🍫</div><h3>Chocolate Shake</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">☕</div><h3>Cold Coffee</h3><p>Ask Price</p></div>
+<div class="card"><div class="icon">🍋</div><h3>Fresh Lime</h3><p>Ask Price</p></div>
+</div>
+</section>
+
+<section id="offers">
+<div class="order">
+<div class="badge">🔥 TODAY'S SPECIAL</div>
+<h2>SEWA KUNJ Special Combo</h2>
+<p>
+Mithai + Fast Food + Drink — apna favourite combination
+banayein aur WhatsApp par order karein.
+</p>
+<a class="btn" href="https://wa.me/918092661335?text=Hello%20SEWA%20KUNJ%2C%20mujhe%20Special%20Combo%20ke%20baare%20mein%20jaanna%20hai.">
+Get Special Offer
+</a>
+</div>
+</section>
+
+<section id="order">
+<div class="order">
+<h2>🚀 Order Now</h2>
+<p>
+Apna order WhatsApp par bhejiye.<br>
+Hum aapko price aur availability bata denge.
+</p>
+
+<a class="whatsapp"
+href="https://wa.me/918092661335?text=Hello%20SEWA%20KUNJ%2C%20mujhe%20order%20karna%20hai.%20Mera%20order%3A">
+💬 Order on WhatsApp
+</a>
+</div>
+</section>
+
+<footer>
+<strong>SEWA KUNJ</strong><br>
+Mithai • Cakes • Fast Food • Beverages<br><br>
+Taste The Future. Feel The Tradition. ✨<br><br>
+© 2026 SEWA KUNJ
+</footer>
+
+</body>
+                                                                                  </html>
